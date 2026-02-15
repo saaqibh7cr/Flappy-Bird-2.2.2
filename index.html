@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Mini</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="game-header">
+        <div>
+          <h1>Flappy Mini</h1>
+          <p>Tap or press space to keep the bird afloat.</p>
+        </div>
+        <div class="score-card">
+          <span>Score</span>
+          <strong id="score">0</strong>
+        </div>
+      </header>
+      <canvas id="game" width="420" height="520" aria-label="Flappy bird canvas"></canvas>
+      <footer class="game-footer">
+        <button id="restart" type="button">Restart</button>
+        <p id="status">Press space or click to start.</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
