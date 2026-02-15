@@ -1,0 +1,104 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  background: #e9f6ff;
+  color: #1d2b3a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #ffffff, #d6eeff);
+}
+
+.game-shell {
+  width: min(92vw, 520px);
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 25px 60px rgba(20, 45, 80, 0.2);
+  display: grid;
+  gap: 1.25rem;
+}
+
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.game-header h1 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.game-header p {
+  margin: 0.25rem 0 0;
+  color: #49617a;
+  font-size: 0.9rem;
+}
+
+.score-card {
+  background: #f3f8ff;
+  border-radius: 16px;
+  padding: 0.5rem 0.85rem;
+  text-align: center;
+  min-width: 86px;
+}
+
+.score-card span {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #5c728a;
+}
+
+.score-card strong {
+  font-size: 1.4rem;
+}
+
+#game {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #9edcff 0%, #d7f0ff 70%, #c4f1d5 70%, #b1e7c6 100%);
+  display: block;
+}
+
+.game-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#restart {
+  background: #1f7aff;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(31, 122, 255, 0.3);
+}
+
+#restart:hover {
+  background: #1361d8;
+}
+
+#status {
+  margin: 0;
+  color: #4c6b84;
+  font-size: 0.9rem;
+}
